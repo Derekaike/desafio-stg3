@@ -1,0 +1,137 @@
+:root {
+    font-size: 62.5%;
+
+    --background1: #8E9AAF;
+    --background2: #CBC0D3;
+    --background3: #EFF1FF;
+    --background4: #FEEAFA;
+
+    --font1: 'Palanquin', sans-serif;
+    --font2: 'Staatliches', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+}
+
+body {
+    background-color: var(--background3);
+}
+
+header {
+    background-color: #8E9AAF;
+    height: 32.0rem;
+    display: flex;
+    display: block;
+}
+
+header img {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    margin: 3.2rem auto 3.2rem;
+}
+
+header h1 {
+    background-color: var(--background2);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    width: 40.0rem;
+    margin: auto;
+}
+
+ p {
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    color: #23053A;
+    width: 305px;
+    margin: 1.4rem auto 5.0rem;
+}
+
+main .wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+
+main .wrap img {
+    animation: leftside 0.4s;
+}
+
+main .wrap h2 {
+    position: absolute;
+    top: 1.5rem;
+    right: 5.0rem;
+    background: var(--background4);
+    width: 11.0rem;
+    height: 3.5rem;
+    border-radius: 2.0rem;
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    letter-spacing: 0.05em;
+
+    color: #4A4E69;
+    text-align: center;
+    animation: rightside 0.4s;
+}
+
+.wrap:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+@keyframes rightside{
+    0% {
+        opacity: 0.5;
+        transform: translateX(6.0rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes leftside{
+    0% {
+        opacity: 0.5;
+        transform: translateX(-6.0rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
