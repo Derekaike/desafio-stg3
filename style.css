@@ -41,6 +41,7 @@ header h1 {
     font-weight: 400;
     font-size: 4.0rem;
     line-height: 3.4rem;
+    padding-top: 0.2rem;
 
     letter-spacing: 0.05em;
 
@@ -112,6 +113,20 @@ main .wrap h2 {
     display: none;
 }
 
+footer p a {
+    font-family: var(--font2);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: var(--background1);
+    text-decoration: underline;
+}
+
 @keyframes rightside{
     0% {
         opacity: 0.5;
@@ -171,7 +186,8 @@ main .wrap h2 {
         place-items: center;
         
         grid-template-areas: "A C" 
-                             "B D";
+                             "B D"
+                             "FO FO";
     }
 
     .right div:nth-child(1){
@@ -191,6 +207,9 @@ main .wrap h2 {
     }
     .right div:nth-child(6){
         display: none;
+    }
+    footer {
+        grid-area: FO;
     }
     
 }
@@ -233,7 +252,8 @@ main .wrap h2 {
         
         grid-template-areas: "A B E" 
                              "D B F" 
-                             "D C F";
+                             "D C F"
+                             "FO FO FO";
     }
 
     .right div:nth-child(1){
@@ -257,4 +277,7 @@ main .wrap h2 {
         display: block;
     }
     
+    footer {
+        grid-area: FO;
+    }
 }
